@@ -1,5 +1,8 @@
 node_modules/
+node_modules
 dist/
+.syntax/
+runtime-dist/
 .env*
 !.env.example
 .DS_Store

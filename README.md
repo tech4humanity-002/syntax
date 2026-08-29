@@ -6,8 +6,9 @@ Syntax is a local-first command, search and automation workspace spanning files,
 skills, models, MCP servers, apps, workers, recipes, schedules, history, styles,
 memory and usage. This repository is the canonical home for **Syntax by Synal**.
 
-Current gate: `ARCHITECTURE_DESIGN_GATE`. Live connectors and native Mac
-packaging follow post-design approval.
+Architecture and product design are approved. The first live local runtime now
+provides SQLite FTS indexing, deterministic search, duplicate classification,
+CLI access and JSON execution receipts.
 
 ## Surfaces
 
@@ -20,6 +21,11 @@ packaging follow post-design approval.
 npm install
 npm run check
 npm run build
+```
+
+```bash
+npm run runtime:index -- "$HOME/Documents" "$HOME/Library/CloudStorage"
+npm run runtime:search -- "widget register"
 ```
 
 See [architecture](docs/ARCHITECTURE.md), [product design](docs/PRODUCT_DESIGN.md),
