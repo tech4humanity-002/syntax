@@ -28,6 +28,18 @@ npm run runtime:index -- "$HOME/Documents" "$HOME/Library/CloudStorage"
 npm run runtime:search -- "widget register"
 ```
 
+## Open the connected Mac interface
+
+```bash
+npm run runtime:serve
+open http://127.0.0.1:47831
+```
+
+The loopback runtime serves the interface and local API from the same origin.
+Searches use the private SQLite index, write receipts, and support native Open
+and Reveal in Finder actions. It binds only to `127.0.0.1` and rejects other
+Host headers.
+
 See [architecture](docs/ARCHITECTURE.md), [product design](docs/PRODUCT_DESIGN.md),
 [security](docs/SECURITY.md), [resale pack](docs/RESALE_PACK.md) and the
 [post-design gate](docs/POST_DESIGN_GATE.md).
