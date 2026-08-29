@@ -28,6 +28,10 @@ npm run runtime:index -- "$HOME/Documents" "$HOME/Library/CloudStorage"
 npm run runtime:search -- "widget register"
 ```
 
+Content extraction supports plain text and source files, DOCX, XLSX, PPTX,
+RTF, and macOS-indexed PDF text. Other files remain searchable by filename,
+path, type, size, date, and duplicate hash.
+
 ## Open the connected Mac interface
 
 ```bash
