@@ -26,7 +26,14 @@ npm run build
 ```bash
 npm run runtime:index -- "$HOME/Documents" "$HOME/Library/CloudStorage"
 npm run runtime:search -- "widget register"
+npm run runtime:graph
 ```
+
+The graph command is a local-first corpus compiler. It can be pointed at Mac
+folders, exported LLM chats and a Google Drive for desktop mount. It uses a
+configurable local Ollama model, preserves source evidence on relationships,
+and writes graph JSON, HTML and a runtime receipt under `~/.syntax/graphs/`.
+See [knowledge graph](docs/KNOWLEDGE_GRAPH.md).
 
 Content extraction supports plain text and source files, DOCX, XLSX, PPTX,
 RTF, and macOS-indexed PDF text. Other files remain searchable by filename,

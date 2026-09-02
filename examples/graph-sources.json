@@ -1,0 +1,5 @@
+[
+  {"name":"mac-documents","kind":"mac","path":"/Users/YOU/Documents","enabled":true},
+  {"name":"llm-chats","kind":"llm-chats","path":"/Users/YOU/Documents/LLM-Chats","enabled":true},
+  {"name":"google-drive","kind":"gdrive","path":"/Users/YOU/Library/CloudStorage/GoogleDrive-ACCOUNT/My Drive","enabled":true}
+]
